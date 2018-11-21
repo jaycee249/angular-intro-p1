@@ -28,7 +28,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/boostrap3/dist/js/bootstrap.js"
+              "node_modules/bootstrap3/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
