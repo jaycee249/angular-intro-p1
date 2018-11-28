@@ -9,6 +9,8 @@ import { TodoComponent } from './todo/todo.component';
 import { ContactComponent } from './contact/contact.component';
 import { AlphabeticalPipe } from './pipes/alphabetical.pipe';
 import { ReversePipe } from './pipe/reverse.pipe';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ReversePipe } from './pipe/reverse.pipe';
     TodoComponent,
     ContactComponent,
     AlphabeticalPipe,
-    ReversePipe
+    ReversePipe,
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
