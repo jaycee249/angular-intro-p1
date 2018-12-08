@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AmiibosComponent } from './amiibos/amiibos.component';
+import { AmiiboDetailComponent } from './amiibo-detail/amiibo-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -17,6 +19,9 @@ const routes: Routes = [
   { path: 'hero/:id', component: HeroDetailComponent },
   { path: 'heroes/:power', component: HeroesComponent },
   { path: 'hero-not-found/:no-hero', component: HeroNotFoundComponent },
+  { path: 'amiibos', component: AmiibosComponent },
+  { path: 'amiibo/:id', component: AmiiboDetailComponent },
+  { path: 'amiibos/:category/:value', component: AmiibosComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

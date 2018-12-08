@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { TodoComponent } from './todo/todo.component';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ContactComponent } from './contact/contact.component';
 import { AlphabeticalPipe } from './pipes/alphabetical.pipe';
 import { ReversePipe } from './pipes/reverse.pipe';
@@ -13,6 +16,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeroNotFoundComponent } from './hero-not-found/hero-not-found.component';
+import { AmiibosComponent } from './amiibos/amiibos.component';
+import { AmiiboDetailComponent } from './amiibo-detail/amiibo-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +30,15 @@ import { HeroNotFoundComponent } from './hero-not-found/hero-not-found.component
     HeroesComponent,
     HeroDetailComponent,
     NotFoundComponent,
-    HeroNotFoundComponent
+    HeroNotFoundComponent,
+    AmiibosComponent,
+    AmiiboDetailComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
