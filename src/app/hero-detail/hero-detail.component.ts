@@ -9,7 +9,7 @@ import { HeroService } from '../services/hero.service';
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css']
 })
-export class HeroDetailComponent implements OnInit, OnDestroy {
+export class HeroDetailComponent implements OnInit {
 
 
   hero: HeroInterface;
@@ -23,7 +23,7 @@ export class HeroDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.getHero().unsubscribe();
+    this.getHero();
   }
 
 }

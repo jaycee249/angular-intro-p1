@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { TodoComponent } from './todo/todo.component';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -18,6 +17,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HeroNotFoundComponent } from './hero-not-found/hero-not-found.component';
 import { AmiibosComponent } from './amiibos/amiibos.component';
 import { AmiiboDetailComponent } from './amiibo-detail/amiibo-detail.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { AmiiboDetailComponent } from './amiibo-detail/amiibo-detail.component';
     NotFoundComponent,
     HeroNotFoundComponent,
     AmiibosComponent,
-    AmiiboDetailComponent
+    AmiiboDetailComponent,
+    SearchPipe
   ],
   imports: [
     AppRoutingModule,
